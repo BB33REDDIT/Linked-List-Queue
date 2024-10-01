@@ -14,11 +14,9 @@ void main ()
 { 
     int choice;  
     while(choice != 4)  
-    {    
-        printf("\n*************************Main Menu*****************************\n"); 
-        printf("\n=================================================================\n"); 
-        printf("\n1.insert an element\n2.Delete an element\n3.Display the queue\n4.Exit\n"); 
-        printf("\nEnter your choice ?"); 
+    {   
+        printf("\n1.Insert_An_Element\n2.Delete_An_Element\n3.Display_Queue\n4.Exit\n"); 
+        printf("\nEnter your choice :"); 
         scanf("%d",& choice); 
         switch(choice) 
         { 
@@ -35,7 +33,7 @@ void main ()
             exit(0); 
             break; 
             default:  
-            printf("\nEnter valid choice??\n"); 
+            printf("\nEnter a valid choice\n"); 
         } 
     } 
 } 
@@ -94,11 +92,12 @@ void display()
         printf("\nEmpty queue\n"); 
     } 
     else 
-    {   printf("\nprinting values .....\n"); 
+    {   printf("\nValues are :\n"); 
         while(ptr != NULL)  
         { 
-            printf("\n%d\n",ptr -> data); 
+            printf("%d\n",ptr -> data); 
             ptr = ptr -> next; 
         } 
     } 
 }  
+
